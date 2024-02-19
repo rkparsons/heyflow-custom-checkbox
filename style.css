@@ -11,9 +11,18 @@
   height: 100%;
   margin: 0;
   border-radius: 5px;
+  outline-offset: 5px;
 
   svg {
     display: none;
+
+    rect {
+      fill: black;
+    }
+
+    polyline {
+      color: white;
+    }
   }
 }
 
@@ -27,18 +36,9 @@
 
   &:focus ~ .customCheckbox {
     outline: 5px solid blue;
-    outline-offset: 5px;
   }
 
   &:checked ~ .customCheckbox svg {
     display: block;
-
-    rect {
-      fill: black;
-    }
-
-    polyline {
-      color: white;
-    }
   }
 }
